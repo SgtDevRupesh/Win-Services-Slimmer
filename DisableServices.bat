@@ -33,15 +33,15 @@ Write-Host "Brave Update Service Disabled"
 
 Set-Service -Name "bravem" -StartupType Disabled -Status Stopped
 Stop-Service -Name "bravem"
-Write-Host "Brave Update Service Disabled 2"
-
-Set-Service -Name "BraveVpnService" -StartupType Disabled -Status Stopped
-Stop-Service -Name "BraveVpnService"
-Write-Host "Brave Vpn Service Disabled"
+Write-Host "BraveM Service Disabled"
 
 Set-Service -Name "BraveVpnWireguardService" -StartupType Disabled -Status Stopped
 Stop-Service -Name "BraveVpnWireguardService"
-Write-Host "Brave Vpn Wireguard Service Disabled"
+Write-Host "BraveVpnWireguard Service Disabled"
+
+Set-Service -Name "BraveVpnService" -StartupType Disabled -Status Stopped
+Stop-Service -Name "BraveVpnService"
+Write-Host "BraveVPN Service Disabled"
 
 Set-Service -Name "DiagTrack" -StartupType Disabled -Status Stopped
 Stop-Service -Name "DiagTrack"
