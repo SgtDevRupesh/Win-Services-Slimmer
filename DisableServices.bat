@@ -51,9 +51,9 @@ Set-Service -Name "VaultSvc" -StartupType Disabled -Status Stopped
 Stop-Service -Name "VaultSvc"
 Write-Host "Credential Manager Service Disabled"
 
-Set-Service -Name "DsSvc" -StartupType Disabled -Status Stopped
-Stop-Service -Name "DsSvc"
-Write-Host "Data Sharing Service Disabled"
+##Set-Service -Name "DsSvc" -StartupType Disabled -Status Stopped
+##Stop-Service -Name "DsSvc"
+##Write-Host "Data Sharing Service Disabled"
 
 ## Disabled because this messes with the driver or any other installation!
 ##Set-Service -Name "DeviceInstall" -StartupType Disabled -Status Stopped
@@ -200,9 +200,9 @@ Set-Service -Name "WalletService" -StartupType Disabled -Status Stopped
 Stop-Service -Name "WalletService"
 Write-Host "WalletService Disabled"
 
-Set-Service -Name "TokenBroker" -StartupType Disabled -Status Stopped
-Stop-Service -Name "TokenBroker"
-Write-Host "Web Account Manager Service Disabled"
+##Set-Service -Name "TokenBroker" -StartupType Disabled -Status Stopped
+##Stop-Service -Name "TokenBroker"
+##Write-Host "Web Account Manager Service Disabled"
 
 Set-Service -Name "WbioSrvc" -StartupType Disabled -Status Stopped
 Stop-Service -Name "WbioSrvc"
